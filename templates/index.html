@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Document Generator</title>
+  </head>
+  <body>
+    <h1>Document Generator</h1>
+    <form method="post">
+      <label for="prompt">Enter a prompt:</label>
+      <input type="text" id="prompt" name="prompt" required>
+      <button type="submit">Generate</button>
+    </form>
+    {% if generated_text %}
+      <h2>Generated Text:</h2>
+      <p>{{ generated_text }}</p>
+    {% endif %}
+  </body>
+</html>
